@@ -1,0 +1,335 @@
+*{margin: 0;padding: 0;}
+main {
+    background: url('/res/joanna.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+}
+.header-container {
+    background-color: black;
+    display: flex;
+    width: 100%;
+    height: auto;
+}
+@font-face {
+    font-family: 'Indie';
+    src: url(/fonts/IndieFlower-Regular.ttf);
+  
+}
+@font-face {
+font-family: 'Doh';
+src: url(/fonts/DoHyeon-Regular.ttf);
+}
+.title-me {
+    color: #fff;
+    flex: 1;
+    font-size: 20px;
+    padding: 18px;
+    text-transform: uppercase;
+    font-family: 'Indie';
+    letter-spacing: 10px;
+}
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 99;
+}
+.menu ul {
+    display: flex;
+    list-style: none;
+    margin-top: 30px;
+    margin-right: 30px;
+    flex-flow: row wrap;
+    
+}
+#work {
+    padding-top: 20px;
+}
+.menu ul li {
+    flex: 1;
+    text-align: center;
+    margin-right: 50px;
+}
+.menu ul li a {
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+    font-family: 'Comic sans ms';
+}
+
+.menu ul li a:hover {
+    background: white;
+    color: black;
+}
+
+
+#about {
+    display: flex;
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    background-image: url('/res/footer-bg.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#about h2 {
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 30px;
+    letter-spacing: 20px;
+}
+.information {
+    margin-top: 50px;
+    font-size: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.information p {
+    margin-bottom: 30px;
+    letter-spacing: 10px;
+    color: white;
+}
+.information a {
+    text-decoration: none;
+    color: black;
+    letter-spacing: 0;
+}
+.information a:hover {
+    color: red;
+}
+.socialmedia {
+    display: flex;
+    justify-content: flex-end;
+}
+.socialmedia img {
+    margin-left: 30px;
+}
+
+.myworks {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: stretch;
+}
+
+
+.myworks table {
+    border-collapse: collapse;
+    width: 100%;
+    display: flex;
+}
+th {
+    font-size: 30px;
+}
+td img {
+    width: 100%;
+}
+tr {
+    border: 1px solid firebrick;
+}
+
+#resume h2 {
+    text-align: center;
+    grid-row: 1 / 1;
+    grid-column: 1 / 2;
+}
+
+#resume p {
+    font-size: 30px;
+    color: peru;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    word-spacing: 10px;
+}
+#resume {
+    display: grid;
+    grid-template-columns: 400px 400px 400px;
+    grid-template-rows: 200px 200px 500px;
+ 
+}
+.info{
+    display: grid;
+    grid-column: 1/ 1;
+    grid-gap: 350px;
+   
+}
+.language{
+    display: grid;
+    list-style: none;
+    font-size: 20px;
+    font-weight: bold;
+ 
+    grid-column: 2/ 2;
+    grid-gap: 50px;
+}
+
+.formations {
+    display: grid;
+    grid-column: 3/ 3;
+    grid-gap: 50px;
+  
+}
+
+.language ul{
+    list-style: none;
+}
+
+.language ul ol {
+    padding-left: 50px;
+    list-style: none;
+}
+
+
+
+.formations h4 {
+    text-align: center;
+    font-size: 20px;
+    font-family: roboto;
+}
+
+
+section h2 {
+    text-align: center;
+    margin: 20px 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 30px;
+    letter-spacing: 10px;
+}
+
+#contact {
+    text-align: center;
+}
+#contact h2 {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: 30px;
+    font-family: 'Doh';
+    letter-spacing: 10px;
+}
+
+button {
+    padding: 20px 30px;
+    border-radius: 20px;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: lightgreen;
+}
+
+button:hover {
+    background-color: black;
+    color: white;
+}
+label {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+input {
+    margin: 10px 10px;
+    padding: 10px 50px;
+    background: none;
+}
+textarea {
+    margin: 20px 20px;
+    background: none;
+}
+ @media (max-width: 576px) {
+     .header-container {
+         flex-direction: column;
+         text-align: center;
+     }
+     .title-me {
+         padding: 18px 0 0;
+     }
+     .menu ul {
+         flex-direction: column;
+         margin-top: 0;
+     }
+     .menu ul li {
+         padding: 5px;
+     }
+  } 
+    
+	@media (min-width: 576px) and (max-width: 768px) { 
+        .header-container {
+            flex-direction: column;
+            text-align: center;
+        }
+        .title-me {
+            padding: 18px 0 0;
+        }
+        .menu ul {
+            flex-direction: column;
+            margin-top: 0;
+        }
+        .menu ul li {
+            padding: 5px;
+        }
+     } 
+        
+	@media (min-width: 768px) and (max-width: 992px)  { 
+        .header-container {
+            flex-direction: column;
+            text-align: center;
+        }
+        .title-me {
+            padding: 18px 0 0;
+        }
+        .menu ul {
+            flex-direction: column;
+            margin-top: 0;
+        }
+        .menu ul li {
+            padding: 5px;
+        }
+     } 
+ 
+	@media (min-width: 992px) and (max-width: 1200px)  { 
+        .header-container {
+            flex-direction: column;
+            text-align: center;
+        }
+        .title-me {
+            padding: 18px 0 0;
+        }
+        .menu ul {
+            flex-direction: column;
+            margin-top: 0;
+        }
+        .menu ul li {
+            padding: 5px;
+        }
+     } 
+     /* div{
+         border:3px solid black;
+     } */
+     
+
+      .dropdownlist {
+        display: none;
+        position: absolute;
+        background-color: red;
+      }
+
+      .dropdownlist a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+      }
+
+      .drop:hover .dropdownlist {
+        display: block;
+      }
+      .dropdownlist a:hover {background-color: #f1f1f1;}
+      
